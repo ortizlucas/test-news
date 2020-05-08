@@ -1,0 +1,16 @@
+{
+    "articles": [
+        {
+            "titles": "Prueba 1",
+            "text": "lorem"
+        },
+        {
+            "titles": "Prueba 1",
+            "text": "lorem"
+        },
+        {
+            "titles": "Prueba 1",
+            "text": "lorem"
+        }
+    ]
+}

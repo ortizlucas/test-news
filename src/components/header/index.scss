@@ -1,0 +1,122 @@
+.header-layout {
+  height: 65px;
+  width: 100%;
+  background-color: #ff9800;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__hamburger {
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+    &__line {
+      height: 3px;
+      width: 35px;
+      background-color: black;
+      transition: all 0.5s ease;
+    }
+    .l-top.active {
+      transform: scale(1) rotate(50deg) translateY(5px) translateX(6px);
+    }
+    .l-mid {
+      margin: 5px 0;
+    }
+    .l-mid.active {
+      opacity: 0;
+    }
+    .l-bot.active {
+      transform: scale(1) rotate(-42deg) translateY(-6px) translateX(5px);
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 89;
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 65px;
+    transition: left 0.5s ease;
+
+    &__ul {
+      &__li {
+        list-style: none;
+        margin: 20px 0;
+        & a {
+          font-size: 24px;
+          color: black;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 1px solid blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav.active {
+    left: 0;
+  }
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .header-layout {
+      justify-content: space-between;
+      &__hamburger {
+        display: none; 
+      }
+
+      &__logo {
+        width: 15%;
+      }
+
+      &__nav {
+        position: initial;
+        background-color: transparent;
+        height: 100%;
+        width: 50%;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+
+        &__ul {
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+
+          &__li {
+             margin: 0;
+             & a {
+              font-size: 20px; 
+            }
+          }
+        }
+      }
+    }
+}
