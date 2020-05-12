@@ -4,22 +4,15 @@ import fetchData from '../../services/apiNews'
 
 const Home = () => {
   const [articles, setArticles] = useState([])
-  const [a, setA] = useState('')
 
   useEffect(() => {
     // fetchData().then(res => setArticles(res.docs))
-    console.log(a)
-  }, [a])
-
-  const onChange = e => {
-    setA(e.target.value)
-    // console.log(a)
-  }
+  }, [])
 
   return (
     <Layout>
       <section className="Home">
-        <input onChange={onChange} />
+
       </section>
     </Layout>
   )
