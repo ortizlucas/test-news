@@ -6,12 +6,15 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/Home'
+import Comments from './pages/Comments'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Home} path='' />
+        {/* <Redirect path="/" to="/home" /> */}
+        <Route exact component={Home} path='/home' />
+        <Route exact component={Comments} path='/comments' />
       </Switch>
     </Router>
   )

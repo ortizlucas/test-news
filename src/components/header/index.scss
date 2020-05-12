@@ -1,7 +1,7 @@
 .header-layout {
   height: 65px;
   width: 100%;
-  background-color: #ff9800;
+  background-color: #8bc34a;
   display: flex;
   align-items: center;
   position: relative;
@@ -55,6 +55,7 @@
     width: 100%;
     left: -100%;
     top: 0;
+    z-index: 1;
     box-sizing: border-box;
     padding-top: 65px;
     transition: left 0.5s ease;

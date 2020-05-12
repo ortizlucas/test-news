@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
 import './index.scss'
 
@@ -6,7 +6,8 @@ const itemsNav = [
   { name: 'Home', to:'/home' },
   { name: 'Ultimas Noticias', to: '/ultimasNoticias' },
   { name: 'Internacionales', to: '/internacionales' },
-  { name: 'Argentina', to: '/argentina' }
+  { name: 'Argentina', to: '/argentina' },
+  { name: 'Comentarios', to: '/comments' }
 ]
 
 
