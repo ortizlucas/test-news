@@ -2,7 +2,8 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from 'react-router-dom'
 
 import Home from './pages/Home'
@@ -12,8 +13,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        {/* <Redirect path="/" to="/home" /> */}
-        <Route exact component={Home} path='/' />
+        <Route exact path="/" render={() => (<Redirect to="/home" />)} />  
+        <Route exact component={Home} path='/home' />
         <Route exact component={Comments} path='/comments' />
       </Switch>
     </Router>
