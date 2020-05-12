@@ -33,11 +33,11 @@ const Comments = () => {
           />
           <label>Comentario</label>
           <textarea 
-            className="comments-section__add-comment__form__textarea"
+            className="comments-section__add-comment__textarea"
             onChange={e => setComment(e.target.value)}
           />
-          <div className="comments-section__add-comment__form__contain-button">
-            <button onClick={handleButton} className="comments-section__add-comment__form__contain-button__button">
+          <div className="comments-section__add-comment__contain-button">
+            <button onClick={handleButton} className="comments-section__add-comment__contain-button__button">
               Agregar
             </button>
           </div>

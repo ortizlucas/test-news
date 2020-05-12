@@ -1,12 +1,17 @@
 .comments-section {
   min-height: calc(100vh - 65px - 100px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   &__add-comment {
     padding: 20px 0;
+    width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    flex-direction: column;
     &__textarea {
-      width: 90%;
+      width: 100%;
       height: 100px;
       box-sizing: border-box;
       outline: none;
